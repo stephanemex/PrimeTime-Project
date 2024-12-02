@@ -1,0 +1,212 @@
+/* Gérer la disposition générale */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #da89aa; /* Couleur de fond */
+}
+
+
+/* Disposition en deux colonnes */
+.container {
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0; /* Espace avant et après la ligne */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Agencement en deux colonnes pour le formulaire */
+#calculator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.full-width {
+    grid-column: span 2;
+    width: 600px;
+}
+
+.full-width-2 {
+    grid-column: span 2;
+    width: 900px;
+}
+
+
+.small-input input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Ajustement pour les deux colonnes */
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo {
+    height: 80px;
+    max-width: 100%;
+}
+
+/* Styles spécifiques pour le titre et le formulaire */
+h1 {
+    font-size: 1.8em;
+    text-align: left;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.title {
+    margin-bottom: 80px;
+    border-radius: 6px;
+    background-color: #da89aa;
+    box-shadow: 0px 8px 17px 1px rgba(0, 0, 0, 0.3);
+    min-width: 600px;
+    }
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Groupement des boutons */
+button {
+    background-color: #da89aa;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 60%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+
+    /* Effets d'ombre et de lueur */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3), /* Ombre intérieure */
+                0 2px 2px rgba(218, 137, 170, 0.6);  /* Lueur extérieure */
+}
+
+button:hover {
+    background-color: #c76c90;
+}
+
+.calculate-btn {
+    grid-column: span 2;
+    text-align: center;
+    padding: 5px;
+    width: auto;
+    max-width: 200px;
+}
+
+.excel-btn {
+    margin-top: 20px;
+    align-self: flex-start;
+    width: 30%;
+}
+
+#adBlocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1em;
+    width: 90%;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #da89aa;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.ad-block {
+    background-color: #f2c4d2;  /* Rose clair pour les blocs publicitaires */
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #da89aa; /* Couleur douce et contrastée */
+    color: #fff;
+}
+
+

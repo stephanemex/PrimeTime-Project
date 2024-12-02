@@ -1,0 +1,293 @@
+/* Styles de base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header-container {
+  background-color: #da89aa; /* Rose */
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Titre principal */
+.page-title {
+  font-size: 24px;
+  color: #da89aa; /* Rose */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #da89aa; /* Rose */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #c76c90; /* Rose foncé */
+}
+
+.tab.active {
+  background-color: #a75476; /* Rose encore plus foncé */
+}
+
+/* Contenus des onglets */
+.tab-contents {
+  margin-top: 20px;
+}
+
+.tab-content {
+  display: none;
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px 15px; /* Espacement ajouté */
+  background-color: #f2c4d2; /* Rose clair */
+  color: #333;
+}
+
+tbody td {
+  padding: 10px 15px; /* Espacement ajouté */
+  border-top: 1px solid #e9ecef;
+}
+
+/* Titre du bloc */
+.block-title {
+  font-size: 18px;
+  color: #da89aa; /* Rose */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Boutons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #da89aa; /* Rose */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c76c90; /* Rose foncé */
+}
+
+/* Boutons de la table */
+button.btn-delete {
+  background-color: #e74c3c; /* Rouge vif */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-delete:hover {
+  background-color: #c0392b; /* Rouge plus sombre au survol */
+}
+
+button.btn-edit {
+  background-color: #a75476; /* Rose foncé */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-edit:hover {
+  background-color: #7a3e55; /* Rose très foncé */
+}
+
+button.btn-add {
+  background-color: #27ae60; /* Vert pour ajouter */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-add:hover {
+  background-color: #1e8449; /* Vert plus sombre au survol */
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  border-radius: 8px;
+  pointer-events: none; /* Empêche les clics quand invisible */
+  width: 400px;
+  max-width: 90%; /* S'adapte aux petits écrans */
+}
+
+.modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal:not(.hidden) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px; /* Espacement entre les éléments */
+}
+
+.modal .modal-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.modal .modal-content label {
+  font-size: 14px;
+  color: #555;
+}
+
+.modal .modal-content input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.modal .modal-content .button-container {
+  display: flex;
+  justify-content: flex-end; /* Les boutons sont alignés à droite */
+  gap: 10px; /* Espacement entre les boutons */
+}
+
+.modal .modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal .modal-content .btn-save {
+  background-color: #4CAF50; /* Couleur verte */
+  color: white;
+}
+
+.modal .modal-content .btn-save:hover {
+  background-color: #45a049; /* Vert plus foncé au survol */
+  transform: scale(1.05); /* Légère animation au survol */
+}
+
+.modal .modal-content .btn-cancel {
+  background-color: #f44336; /* Couleur rouge */
+  color: white;
+}
+
+.modal .modal-content .btn-cancel:hover {
+  background-color: #d32f2f; /* Rouge plus foncé au survol */
+  transform: scale(1.05); /* Légère animation au survol */
+}
+
+/* Style pour le conteneur de l'heure */
+.time-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 20%;
+}
+
+.time-container label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.time-container input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.end-time {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d32f2f; /* Rouge vif pour attirer l’attention */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #f44336; /* Bordure rouge */
+  border-radius: 8px;
+  background-color: #ffe5e5; /* Fond rouge clair */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Footer */
+footer {
+  background-color: #da89aa; /* Rose */
+  color: #ffffff;
+}

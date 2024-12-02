@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des Blocs Publicitaires</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="reporter-style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="Logo_PrimeTimeAds.png" alt="Logo PrimeTime Ads" class="logo">
+    </div>
+    <div class="back-to-hub">
+      <button data-link="../PrimeTime-Hub/index.html">Retour au Hub</button>
+  </div>
+  </header>
+
+  <div class="container">
+    <h1 class="page-title">Historique de Diffusion des Blocs Publicitaires</h1>
+
+    <!-- Conteneur des onglets -->
+    <div id="tab-container" class="tabs">
+      <!-- Les onglets (boutons) seront générés ici via JS -->
+    </div>
+
+    <!-- Conteneur des contenus des onglets -->
+    <div id="tab-content-container" class="tab-contents">
+      <!-- Les contenus des onglets (tableaux des médias) seront générés ici via JS -->
+    </div>
+
+    <!-- Bouton pour ajouter un nouveau bloc -->
+    <button id="add-block" class="btn btn-primary" onclick="addNewBlock()">Ajouter un nouveau bloc</button>
+  </div>
+
+  <!-- Modale pour ajouter/éditer un média -->
+  <div id="modal-media" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="modal-media-title">Modifier les médias du bloc</h2>
+        <label for="media-name">Nom du média :</label>
+        <input type="text" id="media-name" placeholder="Ex : UBS">
+        <label for="media-duration">Durée (secondes) :</label>
+        <input type="number" id="media-duration" min="1" placeholder="Durée">
+        
+        <!-- Conteneur des boutons -->
+        <div class="button-container">
+            <button id="save-media" class="btn btn-save">Enregistrer</button>
+            <button id="cancel-media" class="btn btn-cancel">Annuler</button>
+        </div>
+    </div>
+</div>
+
+
+  <footer>
+    <img class="footer" src="Logo_PrimeTimeAds.png" alt="Logo Footer">
+    <span>Développé par Stéphane Mex. Tous droits réservés © 2024</span>
+  </footer>
+
+  <script src="js-reporter/script-time.js"></script>
+  <script src="js-reporter/script-main.js"></script>
+</body>
+</html>
