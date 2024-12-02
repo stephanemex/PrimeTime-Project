@@ -267,3 +267,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+//THEME CLAIR/FONCE
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Charger le thème depuis le stockage local
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    themeToggle.classList.toggle('active', savedTheme === 'dark');
+});
+
+// Bascule entre les thèmes
+themeToggle.addEventListener('click', () => {
+    const isDark = body.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+
+    body.setAttribute('data-theme', newTheme);
+    themeToggle.classList.toggle('active', newTheme === 'dark');
+    localStorage.setItem('theme', newTheme); // Sauvegarder la préférence utilisateur
+});
+

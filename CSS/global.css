@@ -1,5 +1,111 @@
 /* Global Styles */
 
+:root {
+    /* Thème clair */
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --header-color: #34495e;
+    --footer-color: #2c3e50;
+
+    /* Espacements et typographie */
+    --font-family-sans: 'Roboto', Arial, sans-serif;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+}
+
+[data-theme="dark"] {
+    /* Thème sombre */
+    --background-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --header-color: #1a252f;
+    --footer-color: #121a21;
+    --tool-circle-color: rgba(208, 215, 216, 0.83); /* Cercle plus clair */
+}
+
+:root {
+    /* Couleurs générales */
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --font-family-sans: 'Roboto', Arial, sans-serif;
+
+    /* Couleurs spécifiques aux outils */
+    --ads-color: #da89aa;
+    --hub-color: #00cfff;
+    --xplorer-color: #6c8cb7;
+    --tracks-color: #6fa1b6;
+    --reporter-color: #7aba7d;
+
+    /* Espacements */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    /* Bordures */
+    --border-radius: 8px;
+}
+
+/* Conteneur du bouton interrupteur */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    background-color: var(--header-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Soleil (icône jour) */
+.theme-toggle .sun {
+    font-size: 16px;
+    color: #f39c12; /* Jaune soleil */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Lune (icône nuit) */
+.theme-toggle .moon {
+    font-size: 16px;
+    color: #bdc3c7; /* Gris clair */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Position active jour/nuit */
+.theme-toggle.active .sun {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.theme-toggle.active .moon {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.theme-toggle:not(.active) .sun {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.theme-toggle:not(.active) .moon {
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
 /* Reset */
 * {
     margin: 0;

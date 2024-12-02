@@ -324,3 +324,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+//Changement dfe Thème
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    body.setAttribute('data-theme', newTheme);
+});

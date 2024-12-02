@@ -1,15 +1,10 @@
 /* Styles de base */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f7f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-/* Header */
+/* En-tête */
 .header-container {
-  background-color: #da89aa; /* Rose */
+  background-color: var(--ads-color);
+  color: #fff;
+  padding: var(--spacing-medium);
 }
 
 /* Conteneur principal */
@@ -112,8 +107,8 @@ tbody td {
 }
 
 .btn-primary {
-  background-color: #da89aa; /* Rose */
-  color: white;
+  background-color: var(--ads-color);
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -286,8 +281,10 @@ button.btn-add:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-/* Footer */
+/* Pied de page */
 footer {
-  background-color: #da89aa; /* Rose */
-  color: #ffffff;
+  background-color: var(--ads-color);
+  color: #fff;
+  padding: var(--spacing-medium);
+  text-align: center;
 }

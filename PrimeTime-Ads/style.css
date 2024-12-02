@@ -1,18 +1,11 @@
-/* Gérer la disposition générale */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f2f5;
+/*CSS Spécifique*/
+
+/* En-tête spécifique à Ads */
+.header-container {
+    background-color: var(--ads-color);
+    color: #fff;
+    padding: var(--spacing-medium);
 }
-
-header {
-    background-color: #da89aa; /* Couleur de fond */
-}
-
-
 /* Disposition en deux colonnes */
 .container {
     text-align: left;
@@ -203,10 +196,11 @@ strong {
     font-weight: bold;
 }
 
-/* Footer */
+/* Pied de page spécifique à Ads */
 footer {
-    background-color: #da89aa; /* Couleur douce et contrastée */
+    background-color: var(--ads-color);
     color: #fff;
+    padding: var(--spacing-medium);
+    text-align: center;
 }
-
 
