@@ -1,10 +1,29 @@
 /* Styles de base */
 
-/* En-tête */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Header */
 .header-container {
-  background-color: var(--ads-color);
-  color: #fff;
-  padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column; /* Alignement vertical pour intégrer logo + boutons */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: top;
+    background-color: var(--ads-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Ligne de séparation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    transition: height 0.3s ease;
+    height:170px;
+}
+
+.logo {
+  height: 80px;
+  max-width: 100%;
 }
 
 /* Conteneur principal */
@@ -12,7 +31,7 @@
   max-width: 1300px;
   margin: 20px auto;
   padding: 30px;
-  background: #fff;
+  background: var(--container);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -54,11 +73,12 @@
 /* Contenus des onglets */
 .tab-contents {
   margin-top: 20px;
+  color: var(--text-color);
 }
 
 .tab-content {
   display: none;
-  background: #f9f9f9;
+  background: var(--tab-content); 
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -199,7 +219,7 @@ button.btn-add:hover {
 
 .modal .modal-content label {
   font-size: 14px;
-  color: #555;
+  color: var(--text-color);
 }
 
 .modal .modal-content input {
@@ -254,9 +274,11 @@ button.btn-add:hover {
 }
 
 .time-container label {
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
   margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .time-container input {

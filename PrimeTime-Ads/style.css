@@ -1,15 +1,36 @@
 /*CSS Spécifique*/
 
-/* En-tête spécifique à Ads */
-.header-container {
-    background-color: var(--ads-color);
-    color: #fff;
-    padding: var(--spacing-medium);
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Header */
+.header-container {
+    display: flex;
+    flex-direction: column; /* Alignement vertical pour intégrer logo + boutons */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: top;
+    background-color: var(--ads-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Ligne de séparation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    transition: height 0.3s ease;
+    height:170px;
+}
+
+.logo {
+    height: 80px;
+    max-width: 100%;
+}
+
 /* Disposition en deux colonnes */
 .container {
     text-align: left;
-    background: #fff;
+    background-color: var(--container); /* Même fond que le body */
+    color: var(--text-color); /* Texte adapté au thème */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -50,7 +71,7 @@
 
 
 .small-input input {
-    width: 80px;
+    width: 95px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -69,10 +90,6 @@
     gap: 15px;
 }
 
-.logo {
-    height: 80px;
-    max-width: 100%;
-}
 
 /* Styles spécifiques pour le titre et le formulaire */
 h1 {
@@ -137,6 +154,17 @@ button {
 
 button:hover {
     background-color: #c76c90;
+}
+
+.to-report-btn {
+    grid-column: span 2;
+    text-align: center;
+    padding: 5px;
+    width: auto;
+    max-width: 230px;
+    position: fixed;
+    top: 65px; 
+    left: 0px, 
 }
 
 .calculate-btn {

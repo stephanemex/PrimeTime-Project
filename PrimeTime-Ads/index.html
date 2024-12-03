@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="light"> <!-- Ajoute un attribut data-theme par défaut -->
+
     <header>
         <div class="header-container">
             <img src="Logo_PrimeTimeAds.png" alt="Logo PrimeTime Ads" class="logo">
         </div>
-        <div class="back-to-hub">
-            <button data-link="../PrimeTime-Hub/index.html">Retour au Hub</button>
-        </div>
+        <nav class="nav-buttons">
+            <a href="index.html" class="ads-nav-btn">Accueil - Ads</a>
+            <a href="Pub%20reporter.html" class="ads-nav-btn">Pub Reporter</a>
+            <a href="../PrimeTime-Hub/index.html" class="ads-nav-btn">Retour au Hub</a>
+        </nav>
     </header>
 
+    <!-- Basculeur de thème -->
     <div id="theme-toggle" class="theme-toggle">
         <span class="sun">☀️</span>
         <span class="moon">🌙</span>
     </div>
+
+    <script>
+        document.getElementById('to-report-btn').addEventListener('click', function() {
+            window.location.href = 'Pub%20reporter.html';
+        });
+    </script>
     
     <div class="container">
         <div class="title"><h1>Calcule de Découpage d'Émission</h1></div>
