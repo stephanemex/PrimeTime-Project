@@ -302,6 +302,37 @@ button.btn-add:hover {
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
+#add-block{
+  background-color: #da89aa; /* Couleur rose */
+  color: white; /* Texte blanc */
+  font-weight: bold; /* Texte en gras */
+  border: none; /* Pas de bordure */
+  padding: 10px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Pointeur clic */
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+#add-block:hover{
+  background-color: #c77391; /* Couleur légèrement plus foncée au survol */
+}
+
+#downloadExcel {
+  background-color: #da89aa; /* Couleur rose */
+  color: white; /* Texte blanc */
+  font-weight: bold; /* Texte en gras */
+  border: none; /* Pas de bordure */
+  padding: 10px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Pointeur clic */
+  transition: background-color 0.3s ease; /* Animation au survol */
+  font-size: 14px;
+}
+
+#downloadExcel:hover {
+  background-color: #c77391; /* Couleur légèrement plus foncée au survol */
+}
+
 
 /* Pied de page */
 footer {

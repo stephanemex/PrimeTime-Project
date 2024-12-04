@@ -20,6 +20,20 @@
     --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     --circle-gradient: var(--gradient-light);
 
+    --mapping-th-bg: #495057;
+    --mapping-th-color: #ffffff;
+    --mapping-td-bg: #f8f9fa;
+    --mapping-row-even-bg: #e9ecef;
+    --mapping-row-hover-bg: #d4edda;
+    --mapping-border-color: #ddd;
+
+    --preview-th-bg: #6FA1B6;
+    --preview-th-color: #ffffff;
+    --preview-td-bg-even: #f9f9f9;
+    --preview-td-bg-odd: #d6e9ff;
+    --preview-border-color: #6FA1B6;
+    --preview-hover-bg: #e1f7e1;
+
     /* Espacements et typographie */
     --font-family-sans: 'Roboto', Arial, sans-serif;
     --spacing-small: 8px;
@@ -42,6 +56,23 @@
     --box-shadow: 0 4px 10px rgba(27, 27, 27, 0.828);
     --email-preview:#4e6d94;
     --circle-gradient: var(--gradient-dark);
+    --panel-color:#566e88;
+    --table-row-even-bg: #384e65; /* Fond des lignes paires */
+    --table-row-odd-bg: #2c3e50; /* Fond des lignes impaires */
+    --table-row-hover-bg: #34495e; /* Fond au survol */
+        --mapping-th-bg: #495057; /* Fond des en-têtes */
+        --mapping-th-color: #ffffff; /* Couleur du texte des en-têtes */
+        --mapping-td-bg: #2c3e50; /* Fond des cellules */
+        --mapping-row-even-bg: #384e65; /* Fond des lignes paires */
+        --mapping-row-hover-bg: #34495e; /* Fond des lignes au survol */
+        --mapping-border-color: #566e88; /* Bordures */
+        --mapping-text-color: #ecf0f1; /* Couleur du texte des cellules */
+        --preview-th-bg: #6FA1B6; /* Couleur de fond des en-têtes */
+        --preview-th-color: #ffffff; /* Couleur du texte des en-têtes */
+        --preview-td-bg-even: #384e65; /* Fond des lignes paires */
+        --preview-td-bg-odd: #2c3e50; /* Fond des lignes impaires */
+        --preview-border-color: #6FA1B6; /* Bordure du tableau */
+        --preview-hover-bg: #34495e; /* Fond des lignes au survol */
 }
 
 
