@@ -34,6 +34,8 @@
     --preview-border-color: #6FA1B6;
     --preview-hover-bg: #e1f7e1;
 
+    --th-xplorer-color : #f8f8f8;
+
     /* Espacements et typographie */
     --font-family-sans: 'Roboto', Arial, sans-serif;
     --spacing-small: 8px;
@@ -73,6 +75,8 @@
         --preview-td-bg-odd: #2c3e50; /* Fond des lignes impaires */
         --preview-border-color: #6FA1B6; /* Bordure du tableau */
         --preview-hover-bg: #34495e; /* Fond des lignes au survol */
+
+        --th-xplorer-color : #2c2c2c;
 }
 
 
